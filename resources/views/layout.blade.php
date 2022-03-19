@@ -12,7 +12,7 @@
         <div class="title">To the Stars</div>
         <div class="links">
             @foreach ($planets as $key => $planet)
-                <a href={{ route('planet'); }}>{{ $planet->name }}</a>
+                <a href={{ route('planet', ['page' => $planet->name ]) }}>{{ $planet->name }}</a>
             @endforeach
 
         </div>
