@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Planet;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -13,11 +14,13 @@ class MainController extends BaseController
 
     function home()
     {
-        return view('home');
+        $planets = Planet::all();
+        return view('home', ['planets' => $planets]);
     }
 
     function planet()
     {
-        return view('planet');
+        $planets = Planet::all();
+        return view('planet', ['planets' => $planets]);
     }
 }

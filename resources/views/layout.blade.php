@@ -11,7 +11,10 @@
     <div class="navbar">
         <div class="title">To the Stars</div>
         <div class="links">
-            <a href={{ route('planet'); }}>planet</a>
+            @foreach ($planets as $key => $planet)
+                <a href={{ route('planet'); }}>{{ $planet->name }}</a>
+            @endforeach
+
         </div>
     </div>
 @section('content')
