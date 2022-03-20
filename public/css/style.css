@@ -40,7 +40,7 @@ body{
     margin: 10% 15%;
 }
 
-.content .planet{
+.data .planet{
     grid-area: a;
     font-size: 5rem;
     width: 50%;
@@ -48,13 +48,25 @@ body{
     align-items: center;
 }
 
-.content .description{
+.data .description{
     grid-area: b;
     font-size: 1.25rem;
 }
 
-.content img{
+.data img{
     grid-area: c;
     width: 500px;
     margin-left: auto;
+}
+
+.home{
+    display: grid;
+    grid-template-rows: 40% 40%;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5rem;
+}
+
+.planets img{
+    width: 10%;
 }
