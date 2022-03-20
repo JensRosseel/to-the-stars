@@ -1,0 +1,60 @@
+body{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    color: white;
+    margin: 0px;
+}
+
+.navbar{
+    padding: 15px;
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px -50px 36px -28px inset;
+}
+
+.navbar .title{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .links{
+    text-align: right;
+    width: 100%;
+}
+
+.navbar .links a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.data{
+    display: grid;
+    grid-template-areas:
+        'a c'
+        'b b'
+    ;
+    margin: 10% 15%;
+}
+
+.content .planet{
+    grid-area: a;
+    font-size: 5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.content .description{
+    grid-area: b;
+    font-size: 1.25rem;
+}
+
+.content img{
+    grid-area: c;
+    width: 500px;
+    margin-left: auto;
+}
